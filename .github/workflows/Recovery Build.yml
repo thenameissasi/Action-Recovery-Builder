@@ -108,7 +108,7 @@ jobs:
 
     - name: Clone device tree
       run: |
-        git clone ${{ inputs.DEVICE_TREE_URL }} -b ${{ inputs.DEVICE_TREE_BRANCH }} ./${{ inputs.DEVICE_PATH }}
+        git clone ${{ inputs.DEVICE_TREE_URL }} ./${{ inputs.DEVICE_PATH }}
       working-directory: workspace
 
     - name: Sync Device Dependencies
